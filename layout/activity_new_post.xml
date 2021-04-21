@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.database.NewPostActivity">
+
+	<EditText
+		android:id="@+id/field_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/activity_horizontal_margin"
+		android:hint="@string/hint_title"
+		android:maxLines="1"/>
+
+	<EditText
+		android:id="@+id/field_price"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/field_body"
+		android:layout_marginStart="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="26dp"
+		android:layout_marginEnd="@dimen/activity_horizontal_margin"
+		android:layout_marginBottom="@dimen/activity_horizontal_margin"
+		android:hint="Price"
+		android:maxLines="1" />
+
+	<EditText
+		android:id="@+id/field_body"
+		android:layout_width="357dp"
+		android:layout_height="193dp"
+		android:layout_below="@id/field_title"
+		android:layout_marginStart="@dimen/activity_horizontal_margin"
+		android:layout_marginTop="@dimen/activity_horizontal_margin"
+		android:layout_marginEnd="@dimen/activity_horizontal_margin"
+		android:layout_marginBottom="@dimen/activity_horizontal_margin"
+		android:hint="@string/hint_body"
+		android:inputType="textMultiLine"
+		android:maxLines="20"
+		android:scrollHorizontally="false" />
+
+
+	<TextView
+		android:id="@+id/alert"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:layout_below="@+id/chooser"
+		android:text="here will be alert"
+		android:textAlignment="center"
+		android:textColor="@android:color/holo_red_light"
+		android:textSize="20sp"
+		android:visibility="gone"/>
+
+	<com.google.android.material.floatingactionbutton.FloatingActionButton
+		android:id="@+id/fab_submit_post"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+		android:layout_margin="@dimen/activity_vertical_margin"
+		android:src="@drawable/ic_navigation_check_24"/>
+
+	<Button
+		android:id="@+id/chooser"
+		android:layout_width="wrap_content"
+		android:layout_height="68dp"
+		android:layout_below="@id/field_price"
+
+
+		android:layout_centerInParent="true"
+		android:layout_marginTop="40dp"
+		android:layout_marginEnd="16dp"
+		android:text="Choose Photo" />
+
+
+</RelativeLayout>
